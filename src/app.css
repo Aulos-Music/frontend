@@ -1,3 +1,29 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+	font-family: 'Aulos Sans';
+	src: url('/fonts/Aulos Sans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-sans: 'Montserrat Variable', sans-serif;
+	--font-aulos: 'Aulos Sans', sans-serif;
+	--color-primary: #4366ae;
+	--color-primary-variant: #b7a2ce;
+	--color-secondary: #e4563d;
+	--color-accent: #e6e245;
+	--color-background: #000;
+	--color-surface: #fff;
+	--color-error: #b00020;
+}
+
+@layer base {
+	h1 {
+		font-family: var(--font-aulos);
+	}
+}
