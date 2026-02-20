@@ -5,7 +5,7 @@
 	const { data } = $props();
 </script>
 
-<header class="mx-4 mb-2 mt-4 md:py-4 flex items-center justify-between">
+<header class="bg-white w-full mb-0 mt-0 px-4 md:px-8 md:py-4 flex items-center justify-between">
 	<h1 class="text-xl md:text-3xl font-bold text-black">AULOS</h1>
 
 	<HeaderButton text={'Explorar'} linkTo={'/explore'} />
@@ -13,18 +13,9 @@
 	<HeaderButton text={'Destacado'} linkTo={'/featured'} />
 
 	<div class="gap-2 text-sm md:flex hidden items-center">
-		<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">System:</span>
-		{#if data.health === 'ok'}
-			<span class="font-medium text-emerald-600 flex items-center">
-				<span class="mr-2 h-2 w-2 bg-emerald-500 rounded-full"></span>
-				Operational
-			</span>
-		{:else}
-			<span class="font-medium text-red-600 flex items-center">
-				<span class="mr-2 h-2 w-2 bg-red-500 rounded-full"></span>
-				Offline
-			</span>
-		{/if}
+		<button class="hidden md:block hover:opacity-70 transition-opacity" aria-label="Search">
+			<img src="/assets/icons/Aulos_assets_Search_icon.svg" alt="Search" class="h-20 w-20" />
+		</button>
 	</div>
 	<BurgerButton />
 </header>
