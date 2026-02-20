@@ -20,6 +20,11 @@
 	--color-background: #000;
 	--color-surface: #fff;
 	--color-error: #b00020;
+
+	--background-image-pattern-1: url('/assets/patterns/Aulos_assets_PATTERN_01.svg');
+	--background-image-pattern-2: url('/assets/patterns/Aulos_assets_PATTERN_02.svg');
+	--background-image-pattern-3: url('/assets/patterns/Aulos_assets_PATTERN_03.svg');
+	--background-image-pattern-4: url('/assets/patterns/Aulos_assets_PATTERN_04.svg');
 }
 
 @layer base {
