@@ -4,6 +4,7 @@
     import Hero from './Hero.svelte';
     import ExploreSection from './ExploreSection.svelte';
     import FeaturedArtists from './FeaturedArtists.svelte';
+    import ListeningModes from './ListeningModes.svelte';
 </script>
 
 <div class="font-sans mx-auto w-full bg-black min-h-screen">
@@ -13,5 +14,6 @@
         <Hero />
         <ExploreSection />
         <FeaturedArtists artists={data.artists} />
+        <ListeningModes />
     </main>
 </div>
